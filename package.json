@@ -1,0 +1,29 @@
+{
+  "name": "aia-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hhttps://github.com/nadiamaharani25/flickr-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "bugs": {
+  "url" : "https://github.com/nadiamaharani25/flickr-server/issues",
+  "email" : "nadiamaharaniii04@gmail.com"
+  },
+  "homepage": "https://github.com/nadiamaharani25/flickr-server#readme"
+}
