@@ -1,25 +1,21 @@
 // Modules
-import express from "express"
-import cors from "cors"
-import dotenv from "dotenv"
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
 
-// Routes
-import feedRoutes from "./routes/publicFeed.js"
+// Import routes
+import photoRoutes from "./routes/publicPhoto.js";
 
-// Config
 const app = express();
-dotenv.config()
+dotenv.config();
 
-// PORT : localhost:5000
-app.use(cors())
+app.use(cors());
 const PORT = process.env.PORT || 5000;
 
-// Routing setup
-app.use("/feed", feedRoutes)
+app.use("/photo", photoRoutes);
 
-// Check server that it's running
 app.get("/", (req, res) => {
   res.send("Flickr By Nadia");
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
